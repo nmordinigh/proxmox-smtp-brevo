@@ -56,7 +56,7 @@ Create the generic map file:
 ```Bash
 nano /etc/postfix/generic
 ```
- Add the mapping: `root "Proxmox Service" <tu-email-verificado@dominio.com>`
+ Add the mapping: `root "Proxmox Service" <your-verified-email@domain.com>`
 
 Map and lock it: 
 ```Bash
