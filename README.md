@@ -56,7 +56,7 @@ Create the generic map file:
 ```Bash
 nano /etc/postfix/generic
 ```
- Add the mapping: `root your-verified-brevo-email@domain.com`
+ Add the mapping: `root "Proxmox Service" <tu-email-verificado@dominio.com>`
 
 Map and lock it: 
 ```Bash
@@ -89,6 +89,6 @@ systemctl restart postfix
 
 Verify by sending a test email: 
 ```Bash:
-echo "Hardened and beautified security test" | mail -s "Proxmox Alert" your-destination@email.com
+echo "Test desde el nodo" | mail -s "Check Postfix OK" your-destination@email.com
 ```
 ![Mail](https://github.com/user-attachments/assets/e1fc63cc-0450-470f-a541-649aad04a09f)
